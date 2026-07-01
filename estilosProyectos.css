@@ -121,10 +121,28 @@ body {
     height: 90px;
 }
 
+/*Repositorio*/
+.ContenedorRepositorio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.TituloRepositorio {
+    color: white;
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+
+.IconoRepositorio {
+    width: 100px;
+    height: 100px;
+}
+
 /*Fin estado*/
 
-
-.ContenedorPresentacion {
+/* .ContenedorPresentacion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,4 +170,4 @@ body {
     object-fit: cover;
     border-radius: 10px;
     transform: scale(1); 
-}
+} */
