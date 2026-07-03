@@ -54,6 +54,56 @@ body {
     background-clip: text;
 }
 
+/*Navbar Mobile*/
+
+.BtnMenu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.BtnMenu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffff;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .Navbar {
+        width: 90%;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .BtnMenu {
+        display: flex;
+    }
+    .ListaNav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .ListaNav.Activa { /* Clase para mostrar la lista de navegación en móvil en JS*/
+        display: flex;
+    }
+}
+
+/*Fin Navbar Mobile*/
+
 .ContenedorPuesto {
     display: flex;
     flex-direction: row;     
@@ -137,7 +187,6 @@ body {
     50% { border-color: transparent }
 }
 
-
 .ContenedorInfo {
     display: flex;
     flex-direction: column;   
@@ -204,6 +253,66 @@ body {
     pointer-events: none;
 }
 
+/*Sección Foto Mobile*/
+
+@media (max-width: 768px) {
+    .ContenedorPuesto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+        margin-top: 150px;
+        padding: 0 20px;
+    }
+
+    .ContenedorTituloPuesto {
+        margin-top: 0;
+    }
+
+    .titulo-animado {
+        font-size: 1.5rem;
+    }
+
+    .ContenedorBotonesPuesto {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .BtnPuesto {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .ContenedorMiFoto {
+        margin-top: 0;
+        transform: scale(0.8);
+    }
+
+    .ContenedorInfo {
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+
+    .TextoPresentacion {
+        width: 100%;
+        max-width: 400px;
+        margin-left: 0;
+    }
+
+    @media (max-width: 480px) {
+        .ContenedorMiFoto {
+            transform: scale(0.6);
+        }
+
+        .titulo-animado {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+/*Fin Sección Foto Mobile*/
+
 /* Tecnologías y herramientas */
 
 .ContenedorTituloTec {
@@ -230,7 +339,7 @@ body {
 }
 
 .RecuadroTec {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     width: 80px;
     height: 100px;
@@ -297,6 +406,40 @@ body {
 }
 
 /* Fin recuadro de proyectos */
+
+/*Inicio Proyectos Mobile*/
+
+@media (max-width: 768px) {
+    .ContenedorProyectos {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin-top: 140px;
+        padding: 0 20px;
+    }
+
+    .ContenedorTituloProyectos {
+        margin-top: 0;
+    }
+
+    .TituloProyectos {
+        font-size: 1.5rem;
+    }
+
+    .ContenedorRecuadros {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .RecuadroPro {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/*Fin Proyectos Mobile*/
 
 .ContenedorTituloCont {
     display: flex;
@@ -445,6 +588,40 @@ body {
     font-weight: bold;
     margin: 0;
 }
+
+/*Inicio Estudios Mobile*/
+
+@media (max-width: 768px) {
+    .ContenedorEstudios {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin-top: 100px;
+        padding: 0 20px;
+    }
+    
+    .ContenedorTituloEstudios {
+        margin-top: 0;
+    }
+
+    .TituloEstudios {
+        font-size: 1.5rem;
+    }
+
+    .ContenedorCards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .CardEstudio, .CardEstudio2, .CardEstudio3 {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/*Fin Estudios Mobile*/
 
 /*Footer*/
 
