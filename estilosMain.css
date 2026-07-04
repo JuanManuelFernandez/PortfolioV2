@@ -206,6 +206,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .TextoPresentacion {
@@ -658,3 +659,23 @@ body {
     height: 80px;
     width: 80px;
 }
+
+/*Inicio Footer Mobile*/
+
+@media (max-width: 768px) {
+    .Footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .ContenedorMail {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ContenedorLink {
+        margin-top: 30px;
+    }
+}
+
+/*Fin Footer Mobile*/

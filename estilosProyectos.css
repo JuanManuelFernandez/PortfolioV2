@@ -52,6 +52,56 @@ body {
     background-clip: text;
 }
 
+/*Inicio Navbar Mobile*/
+
+.BtnMenu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.BtnMenu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #ffff;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .Navbar {
+        width: 90%;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .BtnMenu {
+        display: flex;
+    }
+    .ListaNav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        background-color: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .ListaNav.Activa { /* Clase para mostrar la lista de navegación en móvil en JS*/
+        display: flex;
+    }
+}
+
+/*Fin Navbar Mobile*/
+
 .ContenedorDescripcion {
     display: flex;
     flex-direction: column;
@@ -70,7 +120,30 @@ body {
 .Descripcion {
     color: white;
     margin-top: 0;
+    font-weight: bold;
 }
+
+/*Inicio Descripción Mobile*/
+
+@media (max-width: 768px) {
+    .ContenedorDescripcion {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .TituloDescripcion {
+        font-size: 1.7rem;
+    }
+
+    .Descripcion {
+        font-size: 1rem;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+}
+
+/*Fin Descripción Mobile*/
 
 .TituloTecUtilizadas {
     display: flex;
@@ -97,6 +170,27 @@ body {
     height: 80px;
 }
 
+/*Inicio Tecnologías Mobile*/
+
+@media (max-width: 768px) {
+
+    .TituloTecUtilizadas {
+        font-size: 1.7rem;
+    }
+
+    .ContendorTecUtilizadas {
+        flex-direction: row;
+        justify-content: center;   
+    }
+
+    .IconoTec {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/*Fin Tecnologías Mobile*/
+
 /*Estado*/
 
 .ContenedorEstado {
@@ -121,6 +215,27 @@ body {
     height: 90px;
 }
 
+/*Inicio Estado Mobile*/
+
+@media (max-width: 768px) {
+
+    .TituloEstado {
+        font-size: 1.7rem;
+    }
+
+    .IconoCompleto {
+        width: 200px;
+        height: 80px;
+    }
+
+    .IconoEnDesarrollo {
+        width: 250px;
+        height: 70px;
+    }
+}
+
+/*Fin Estado Mobile*/
+
 /*Repositorio*/
 .ContenedorRepositorio {
     display: flex;
@@ -140,7 +255,21 @@ body {
     height: 100px;
 }
 
-/*Fin estado*/
+/*Inicio Repositorio Mobile*/
+
+@media (max-width: 768px) {
+
+    .TituloRepositorio {
+        font-size: 1.7rem;
+    }
+
+    .IconoRepositorio {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/*Fin Repositorio Mobile*/
 
 /* .ContenedorPresentacion {
     display: flex;
