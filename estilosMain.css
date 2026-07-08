@@ -109,7 +109,7 @@ body {
     flex-direction: row;     
     justify-content: center;
     margin-top: 200px;
-    gap: 250px;
+    gap: 270px;
 }
 .ContenedorTituloPuesto {
     margin-top: 120px;
@@ -167,20 +167,26 @@ body {
 }
 
 .titulo-animado {
+    font-size: 2.1rem;
+    width: 23ch;
+}
+
+.texto-enEjecucion {
+    display: inline-block;
     background: linear-gradient(to right, #ffff, rgb(238, 160, 59), #ff0055);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    border-right: 3px solid #ff6b00; 
+    border-right: 3px solid #ff6b00;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 3s steps(17) infinite alternate, blink 0,7s step-end infinite;
-    font-size: 2.1rem;
+    width: 0;
+    animation: typing 3s steps(22) infinite alternate, blink 0.7s step-end infinite;
 }
 
 @keyframes typing {
     from { width: 0 }
-    to   { width: 20ch }
+    to   { width: 23ch }
 }
 
 @keyframes blink {
