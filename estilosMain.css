@@ -598,6 +598,20 @@ body {
     backdrop-filter: blur(8px);
 }
 
+.CardEstudio4 {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 30px 25px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+}
+
 .CardIcono {
     display: flex;
     flex-direction: row;
@@ -637,6 +651,13 @@ body {
     margin: 0;
 }
 
+.CardTitulo4 {
+    color: rgb(255, 166, 0);
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
 .CardAnios3 {
     color: rgba(0, 0, 0, 0.6);
     font-size: 0.85rem;
@@ -644,6 +665,19 @@ body {
 }
 
 .CardCarrera3 {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.CardAnios4 {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+.CardCarrera4 {
     color: rgba(0, 0, 0, 0.85);
     font-size: 0.7rem;
     font-weight: bold;
