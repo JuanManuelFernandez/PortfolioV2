@@ -710,7 +710,7 @@ body {
         gap: 20px;
     }
 
-    .CardEstudio, .CardEstudio2, .CardEstudio3 {
+    .CardEstudio, .CardEstudio2, .CardEstudio3 .CardEstudio4{
         width: 100%;
         max-width: 200px;
     }
